@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISMA House/Painter · Pintura Residencial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="nav-logo">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/140902_35c223a2.png" alt="PRISMA Logo">
+            <div class="nav-logo-txt">
+                <b>PRISMA</b>
+                <small>House / Painter</small>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#banner">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Trabalhos</a></li>
+            <li><a href="#depoimentos">Clientes</a></li>
+            <li><a href="#orcamento" class="nav-cta">Pedir Orçamento</a></li>
+        </ul>
+        <div class="ham" id="ham" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <div id="mob-menu">
+        <a href="#banner" onclick="window.mClose()">Início</a>
+        <a href="#sobre" onclick="window.mClose()">Sobre</a>
+        <a href="#servicos" onclick="window.mClose()">Serviços</a>
+        <a href="#galeria" onclick="window.mClose()">Trabalhos</a>
+        <a href="#depoimentos" onclick="window.mClose()">Clientes</a>
+        <a href="#orcamento" class="mob-cta" onclick="window.mClose()">Solicitar Orçamento</a>
+        <a href="https://wa.me/5519998060453" target="_blank">📱 WhatsApp (19) 99806-0453</a>
+    </div>
+
+    <!-- BANNER -->
+    <section id="banner">
+        <div class="banner-bg"></div>
+        <div class="banner-overlay"></div>
+        <div class="banner-grid"></div>
+        <div class="banner-content">
+            <div class="banner-badge">JÚNIOR • Pintor de Alto Padrão</div>
+            <h1 class="banner-h1">Sua casa merece <em>cores que encantam</em></h1>
+            <div class="banner-rule"></div>
+            <p class="banner-sub">Pintura residencial com acabamento profissional, logística impecável e atendimento próximo. Do orçamento à entrega, cuidamos de cada detalhe.</p>
+            <div class="banner-btns">
+                <a href="#orcamento" class="btn-p">Solicitar Orçamento <span>→</span></a>
+                <a href="#servicos" class="btn-o">Ver Serviços</a>
+            </div>
+        </div>
+        <div class="banner-stats">
+            <div class="banner-stat">
+                <span class="bs-num">250+</span>
+                <span class="bs-lbl">Projetos realizados</span>
+            </div>
+            <div class="banner-stat">
+                <span class="bs-num">98%</span>
+                <span class="bs-lbl">Clientes satisfeitos</span>
+            </div>
+            <div class="banner-stat">
+                <span class="bs-num">100%</span>
+                <span class="bs-lbl">Garantia no serviço</span>
+            </div>
+            <div class="banner-stat">
+                <span class="bs-num">5+</span>
+                <span class="bs-lbl">Anos de experiência</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sec sec-white rv">
+        <div class="sobre-grid">
+            <div class="sobre-img-wrap rv">
+                <div class="sobre-img-box">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/140902_35c223a2.png" alt="Júnior Pintor">
+                </div>
+                <div class="sobre-badge">
+                    <b>JÚNIOR</b>
+                    <small>Pintor de Alto Padrão</small>
+                </div>
+            </div>
+            <div class="sobre-txt rv">
+                <span class="lbl">Quem Somos</span>
+                <h2 class="ttl">SOFISTICAÇÃO E CUIDADO EM CADA PROJETO</h2>
+                <p class="lead">A PRISMA nasceu da paixão por transformar ambientes. Gerenciada de forma próxima e personalizada, cada cliente recebe atenção dedicada do primeiro contato à entrega final.</p>
+                <ul class="check-list">
+                    <li><span class="chk">✓</span> Gestão direta e comunicação aberta em todas as etapas</li>
+                    <li><span class="chk">✓</span> Equipe treinada, pontual e comprometida com o prazo</li>
+                    <li><span class="chk">✓</span> Materiais de primeira linha — marcas premium do mercado</li>
+                    <li><span class="chk">✓</span> Proteção total de móveis e pisos durante a execução</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="sec sec-off rv">
+        <span class="lbl rv">Serviços</span>
+        <h2 class="ttl rv">Tudo que seu lar precisa</h2>
+        <p class="lead rv">Cada serviço executado com técnica, capricho e os melhores materiais disponíveis.</p>
+        
+        <div class="tabs-bar rv">
+            <button class="tab-btn active" onclick="tab(this,'pinturas')">🖌️ PINTURAS</button>
+            <button class="tab-btn" onclick="tab(this,'efeitos')">✨ EFEITOS DECORATIVOS</button>
+            <button class="tab-btn" onclick="tab(this,'epoxi')">🏭 EPÓXI INDUSTRIAL</button>
+            <button class="tab-btn" onclick="tab(this,'texturas')">🎨 TEXTURAS PROJETADAS</button>
+        </div>
+
+        <!-- PINTURAS -->
+        <div id="pinturas" class="tab-panel active">
+            <div class="srv-grid">
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/08-pintura-interna-QEtuvGESTBxW6gLcjfjf3u.webp" alt="Pintura Interna" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">01</span>
+                        <h3>PINTURA INTERNA</h3>
+                        <p>Salas, quartos, cozinhas e banheiros com acabamento impecável. Protegemos todos os móveis e pisos durante a execução.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/07-rolada-6vJNKGY3whw6g8zx9MK8Lh.webp" alt="Pintura Externa" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">02</span>
+                        <h3>PINTURA EXTERNA & FACHADA</h3>
+                        <p>Revitalização de fachadas com produtos de alta resistência. Valorizamos a primeira impressão do seu imóvel.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/06-granfino-JxDyu5dbE3ZKGFjc89sMER.webp" alt="Pintura de Varanda" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">03</span>
+                        <h3>PINTURA DE VARANDA & ÁREA EXTERNA</h3>
+                        <p>Proteção e renovação de varandas, áreas externas e terraços. Produtos resistentes a intempéries e durabilidade garantida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EFEITOS DECORATIVOS -->
+        <div id="efeitos" class="tab-panel">
+            <div class="srv-grid">
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/01-cimento-queimado-5RY5M7EnNBf8nJRMdCenyk.webp" alt="Cimento Queimado" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">01</span>
+                        <h3>EFEITO CIMENTO QUEIMADO</h3>
+                        <p>Acabamento industrial e sofisticado. Perfeito para ambientes modernos que buscam um visual único e contemporâneo.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/02-velvet-nuage-HWK8q6MP4Gj79VtXvZoUzd.webp" alt="Velvet Nuage" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">02</span>
+                        <h3>EFEITO VELVET NUAGE</h3>
+                        <p>Acabamento aveludado e sofisticado com toque de nuvem. Transforma qualquer parede em um elemento decorativo exclusivo e elegante.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/03-pedras-naturais-LTFpPCe9GK8nfVNcLnc4gY.webp" alt="Pedras Naturais" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">03</span>
+                        <h3>EFEITO DECORATIVO PEDRAS NATURAIS</h3>
+                        <p>Simulação realista de pedras naturais. Adiciona textura e profundidade, criando ambientes com personalidade e sofisticação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EPÓXI -->
+        <div id="epoxi" class="tab-panel">
+            <div class="srv-grid">
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/04-epoxi-industrial-GViThEuzwCemecfVnVBqPa.webp" alt="Epóxi Industrial" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">01</span>
+                        <h3>PINTURA EPÓXI EM PISO INDUSTRIAL</h3>
+                        <p>Revestimento de alta resistência para pisos comerciais e industriais. Durável, fácil de limpar e com excelente acabamento.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/05-epoxi-comercial-jc3oLK5dfRDYMUsQ7eHrim.webp" alt="Epóxi Comercial" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">02</span>
+                        <h3>PINTURA EPÓXI EM PISO COMERCIAL</h3>
+                        <p>Solução profissional para ambientes comerciais. Resistente ao tráfego intenso, manchas e produtos químicos.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/04-epoxi-industrial-GViThEuzwCemecfVnVBqPa.webp" alt="Proteção Epóxi" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">03</span>
+                        <h3>PROTEÇÃO E IMPERMEABILIZAÇÃO EPÓXI</h3>
+                        <p>Proteção total contra infiltrações e umidade. Ideal para garagens, áreas molhadas e espaços que exigem durabilidade extrema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEXTURAS -->
+        <div id="texturas" class="tab-panel">
+            <div class="srv-grid">
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/06-granfino-JxDyu5dbE3ZKGFjc89sMER.webp" alt="Granfino" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">01</span>
+                        <h3>TEXTURA PROJETADA GRANFINO</h3>
+                        <p>Acabamento fino e uniforme. Ideal para ambientes internos que buscam sofisticação e acabamento de alta qualidade.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/07-rolada-6vJNKGY3whw6g8zx9MK8Lh.webp" alt="Textura Rolada" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">02</span>
+                        <h3>TEXTURA PROJETADA ROLADA</h3>
+                        <p>Acabamento texturizado e robusto. Perfeita para fachadas e ambientes que exigem durabilidade e proteção contra intempéries.</p>
+                    </div>
+                </div>
+                <div class="srv-card rv">
+                    <div class="srv-img">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/01-cimento-queimado-5RY5M7EnNBf8nJRMdCenyk.webp" alt="Texturas Personalizadas" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-n">03</span>
+                        <h3>TEXTURAS PROJETADAS PERSONALIZADAS</h3>
+                        <p>Soluções customizadas de texturas. Combinamos técnicas e materiais para criar acabamentos únicos e exclusivos para seu projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="sec sec-white rv">
+        <div class="gal-top rv">
+            <div>
+                <span class="lbl">Trabalhos Realizados</span>
+                <h2 class="ttl">Resultados que falam por si mesmos</h2>
+            </div>
+            <a href="#orcamento" class="btn-p">Quero o meu <span>→</span></a>
+        </div>
+        <div class="gal-grid">
+            <div class="gal-item feat rv">
+                <div class="gal-img">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/galeria-antes-depois-1-6Xq9gEBwdA9qncBftvCgSw.webp" alt="Sala de Estar" loading="lazy">
+                </div>
+                <div class="gal-ovl">
+                    <span class="gal-lbl">Pintura Interna · Sala de Estar</span>
+                </div>
+            </div>
+            <div class="gal-item rv">
+                <div class="gal-img">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/galeria-antes-depois-2-f8VcQz4Ha4rKWX4NsZJBPV.webp" alt="Quarto" loading="lazy">
+                </div>
+                <div class="gal-ovl">
+                    <span class="gal-lbl">Quarto · Textura Especial</span>
+                </div>
+            </div>
+            <div class="gal-item rv">
+                <div class="gal-img">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/01-cimento-queimado-5RY5M7EnNBf8nJRMdCenyk.webp" alt="Cimento Queimado" loading="lazy">
+                </div>
+                <div class="gal-ovl">
+                    <span class="gal-lbl">Efeito Cimento Queimado</span>
+                </div>
+            </div>
+            <div class="gal-item rv">
+                <div class="gal-img">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/02-velvet-nuage-HWK8q6MP4Gj79VtXvZoUzd.webp" alt="Velvet Nuage" loading="lazy">
+                </div>
+                <div class="gal-ovl">
+                    <span class="gal-lbl">Efeito Velvet Nuage</span>
+                </div>
+            </div>
+            <div class="gal-item rv">
+                <div class="gal-img">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/03-pedras-naturais-LTFpPCe9GK8nfVNcLnc4gY.webp" alt="Pedras Naturais" loading="lazy">
+                </div>
+                <div class="gal-ovl">
+                    <span class="gal-lbl">Efeito Pedras Naturais</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="sec sec-pale rv">
+        <span class="lbl rv">Por Que a PRISMA</span>
+        <h2 class="ttl rv">O que nos torna diferentes</h2>
+        <div class="diff-grid">
+            <div class="diff-card rv">
+                <div class="diff-ico">👤</div>
+                <h4 class="titulo-destaque">Gestão personalizada</h4>
+                <p>Atendimento direto e próximo com quem decide. Sem intermediários, com total transparência.</p>
+            </div>
+            <div class="diff-card rv">
+                <div class="diff-ico">📋</div>
+                <h4 class="titulo-destaque">Logística impecável</h4>
+                <p>Cronograma cumprido e materiais sempre na hora certa. Respeitamos o seu tempo.</p>
+            </div>
+            <div class="diff-card rv">
+                <div class="diff-ico">💰</div>
+                <h4 class="titulo-destaque">Pagamento seguro e direto</h4>
+                <p>Todo acerto financeiro é feito diretamente com o responsável pela Prisma — sem surpresas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec sec-white rv">
+        <span class="lbl rv">Dúvidas Frequentes</span>
+        <h2 class="ttl rv">Perguntas e Respostas</h2>
+        <div class="faq-wrap" style="max-width:700px;margin-top:2.5rem;">
+            <div class="faq-item rv">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span>Quanto custa uma pintura?</span>
+                    <span class="faq-ico">+</span>
+                </button>
+                <div class="faq-ans">
+                    <p>O preço varia conforme o tamanho da área, tipo de serviço e acabamento desejado. Oferecemos orçamento gratuito com visita técnica para avaliar o projeto.</p>
+                </div>
+            </div>
+            <div class="faq-item rv">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span>Qual é o prazo de execução?</span>
+                    <span class="faq-ico">+</span>
+                </button>
+                <div class="faq-ans">
+                    <p>O prazo depende da metragem e complexidade. Projetos pequenos levam 2-3 dias, médios 5-7 dias e grandes 10-15 dias. Priorizamos a qualidade e o cumprimento do cronograma.</p>
+                </div>
+            </div>
+            <div class="faq-item rv">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span>Vocês trabalham em finais de semana?</span>
+                    <span class="faq-ico">+</span>
+                </button>
+                <div class="faq-ans">
+                    <p>Sim! Trabalhamos de segunda a sábado. Horários especiais podem ser negociados conforme a necessidade do cliente.</p>
+                </div>
+            </div>
+            <div class="faq-item rv">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span>Qual é a garantia do serviço?</span>
+                    <span class="faq-ico">+</span>
+                </button>
+                <div class="faq-ans">
+                    <p>Oferecemos garantia de qualidade no acabamento. Utilizamos materiais de primeira linha que garantem durabilidade e beleza por anos.</p>
+                </div>
+            </div>
+            <div class="faq-item rv">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span>Como funciona o orçamento?</span>
+                    <span class="faq-ico">+</span>
+                </button>
+                <div class="faq-ans">
+                    <p>1. Você solicita o orçamento via WhatsApp ou formulário. 2. Agendamos uma visita técnica gratuita. 3. Apresentamos um orçamento detalhado. 4. Confirmado, iniciamos o serviço.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="sec sec-off rv">
+        <span class="lbl rv">Clientes</span>
+        <h2 class="ttl rv">O que dizem sobre a PRISMA</h2>
+        <div class="testi-wrap rv">
+            <div class="testi-track" id="ttrack"></div>
+        </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section id="orcamento" class="sec sec-dark rv">
+        <span class="lbl rv">Orçamento Gratuito</span>
+        <h2 class="ttl rv">Vamos transformar seu ambiente</h2>
+        <p class="lead rv">Solicite seu orçamento. Respondemos em até 24 horas e a visita técnica é por nossa conta.</p>
+        
+        <div class="orc-grid">
+            <div class="orc-info rv">
+                <ul class="orc-hi">
+                    <li><span class="orc-dot"></span> WhatsApp: (19) 99806-0453</li>
+                    <li><span class="orc-dot"></span> Resposta em até 24 horas</li>
+                    <li><span class="orc-dot"></span> Visita técnica gratuita</li>
+                    <li><span class="orc-dot"></span> Orçamento detalhado e sem surpresas</li>
+                    <li><span class="orc-dot"></span> Sem taxa de deslocamento na região</li>
+                    <li><span class="orc-dot"></span> E-mail: contato@prismahouse.com.br</li>
+                    <li><span class="orc-dot"></span> Pagamento negociado diretamente — total segurança</li>
+                </ul>
+            </div>
+            
+            <div class="orc-form rv" id="fc">
+                <h3 class="srv-ttl">Solicitar Orçamento</h3>
+                <p class="f-sub">Campos com * são obrigatórios</p>
+                
+                <div class="f-grid">
+                    <div class="fg full">
+                        <label>Nome *</label>
+                        <input type="text" id="fn" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="fg">
+                        <label>WhatsApp *</label>
+                        <input type="tel" id="ft" placeholder="(19) 99806-0453" required>
+                    </div>
+                    <div class="fg">
+                        <label>Endereço / Bairro *</label>
+                        <input type="text" id="fe" placeholder="Rua, número, bairro" required>
+                    </div>
+                    <div class="fg full">
+                        <label>Tipo de Serviço *</label>
+                        <div class="service-grid">
+                            <div class="service-card" data-service="Pintura Interna">
+                                <span>🖌️</span>
+                                <span>Pintura Interna</span>
+                            </div>
+                            <div class="service-card" data-service="Pintura Externa">
+                                <span>🏠</span>
+                                <span>Pintura Externa</span>
+                            </div>
+                            <div class="service-card" data-service="Textura">
+                                <span>✨</span>
+                                <span>Textura</span>
+                            </div>
+                            <div class="service-card" data-service="Impermeabilização">
+                                <span>💧</span>
+                                <span>Impermeabilização</span>
+                            </div>
+                            <div class="service-card" data-service="Massa/Gesso">
+                                <span>🔨</span>
+                                <span>Massa/Gesso</span>
+                            </div>
+                            <div class="service-card" data-service="Manutenção">
+                                <span>🔧</span>
+                                <span>Manutenção</span>
+                            </div>
+                            <div class="service-card" data-service="Múltiplos">
+                                <span>📋</span>
+                                <span>Múltiplos</span>
+                            </div>
+                        </div>
+                        <input type="hidden" id="fs" value="">
+                    </div>
+                    <div class="fg full">
+                        <label>Tamanho Estimado</label>
+                        <div class="size-grid">
+                            <div class="size-card" data-size="Até 50 m²">
+                                <span>📐</span>
+                                <span>Até 50 m²</span>
+                            </div>
+                            <div class="size-card" data-size="50 – 100 m²">
+                                <span>📐</span>
+                                <span>50 – 100 m²</span>
+                            </div>
+                            <div class="size-card" data-size="100 – 200 m²">
+                                <span>📐</span>
+                                <span>100 – 200 m²</span>
+                            </div>
+                            <div class="size-card" data-size="Acima de 200 m²">
+                                <span>📐</span>
+                                <span>+200 m²</span>
+                            </div>
+                            <div class="size-card" data-size="Não sei">
+                                <span>❓</span>
+                                <span>Não sei</span>
+                            </div>
+                        </div>
+                        <input type="hidden" id="fsize" value="Nao informado">
+                    </div>
+                    <div class="fg full">
+                        <label>Detalhes</label>
+                        <textarea id="fd" placeholder="Conte mais sobre seu projeto..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="f-notice">
+                    <span>✅</span>
+                    <p><strong>Nenhum pagamento é realizado por este site.</strong> Todo acerto financeiro é feito diretamente com o responsável pela PRISMA, garantindo total transparência e segurança.</p>
+                </div>
+                
+                <button class="btn-sub" onclick="enviarWhatsApp()">Enviar via WhatsApp <span>→</span></button>
+            </div>
+            
+            <div class="f-ok" id="fok">
+                <em>🎨</em>
+                <h4>Solicitação Recebida!</h4>
+                <p>Obrigado! Em breve o responsável da Prisma entrará em contato para agendar uma <strong>visita técnica gratuita</strong> e apresentar seu orçamento personalizado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="ft-grid">
+            <div class="ft-brand">
+                <div class="ft-logo-row">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028940023/56LxJYBerGhgcxpGox8AYa/140902_35c223a2.png" alt="PRISMA Logo" class="ft-logo-img">
+                    <div>
+                        <span class="ft-logo-b">PRISMA</span>
+                        <span class="ft-logo-s">House / Painter</span>
+                    </div>
+                </div>
+                <p>Trazendo Sofisticação em seu Ambiente. Pintura residencial profissional com qualidade, cuidado e atenção pessoal.</p>
+            </div>
+            <div class="ft-col">
+                <h5>Navegação</h5>
+                <ul>
+                    <li><a href="#banner">Início</a></li>
+                    <li><a href="#sobre">Sobre a Prisma</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Trabalhos</a></li>
+                    <li><a href="#depoimentos">Clientes</a></li>
+                    <li><a href="#orcamento">Orçamento</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h5>Contato</h5>
+                <ul>
+                    <li class="ft-ci"><span class="ft-dot"></span><a href="https://wa.me/5519998060453" target="_blank">(19) 99806-0453 — WhatsApp</a></li>
+                    <li class="ft-ci"><span class="ft-dot"></span><a href="tel:+5519998060453">(19) 99806-0453 — Ligar</a></li>
+                    <li class="ft-ci"><span class="ft-dot"></span><a href="mailto:contato@prismahouse.com.br">contato@prismahouse.com.br</a></li>
+                    <li class="ft-ci"><span class="ft-dot"></span><a href="https://instagram.com/prismahousepainter" target="_blank">@prismahousepainter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-bar">
+            <p>© 2026 PRISMA House/Painter. Todos os direitos reservados.</p>
+            <a href="#orcamento" class="btn-p" style="padding:.55rem 1.2rem;font-size:.78rem;">Pedir Orçamento <span>→</span></a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+</body>
+</html>
