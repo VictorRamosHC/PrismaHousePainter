@@ -60,12 +60,12 @@ window.tab = function(btn, id){
 
 /* ── Depoimentos ── */
 var d = [
-    {t:'O acabamento ficou perfeito! Pintaram toda a casa em 3 dias sem deixar nenhuma sujeira. Recomendo demais.', a:'Ana C. · São Paulo'},
-    {t:'Profissionalismo do início ao fim. Orçamento claro, prazo cumprido e resultado que superou expectativas.', a:'Roberto M. · Guarulhos'},
-    {t:'Textura na sala ficou incrível. Já indiquei para dois vizinhos e todos adoraram o trabalho.', a:'Fernanda L. · Osasco'},
-    {t:'Fiz a fachada da minha casa e ficou nova! Atendimento excelente e preço justo. Vou chamar novamente.', a:'Carlos H. · Cotia'},
-    {t:'Resolveram um problema de umidade que tinha há anos. Serviço caprichado e equipe muito educada.', a:'Marcia S. · Santo André'},
-    {t:'Pontualidade e organização impecáveis. Protegeram todos os móveis e deixaram tudo limpo.', a:'Paulo R. · Mauá'},
+    {t:'O acabamento ficou perfeito! Pintaram toda a casa em 3 dias sem deixar nenhuma sujeira. Recomendo demais.', a:'Ana C.'},
+    {t:'Profissionalismo do início ao fim. Orçamento claro, prazo cumprido e resultado que superou expectativas.', a:'Roberto M.'},
+    {t:'Textura na sala ficou incrível. Já indiquei para dois vizinhos e todos adoraram o trabalho.', a:'Fernanda L.'},
+    {t:'Fiz a fachada da minha casa e ficou nova! Atendimento excelente e preço justo. Vou chamar novamente.', a:'Carlos H.'},
+    {t:'Resolveram um problema de umidade que tinha há anos. Serviço caprichado e equipe muito educada.', a:'Marcia S.'},
+    {t:'Pontualidade e organização impecáveis. Protegeram todos os móveis e deixaram tudo limpo.', a:'Paulo R.'},
 ];
 var tr = document.getElementById('ttrack');
 if(tr){
